@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Court</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\vijay\Pictures\food.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@600;700&family=Roboto+Slab:wght@500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 10px;
+            padding: 0;
+            background-color: #f5e6b5;
+			overflow: hidden;
+			
+            
+        }
+
+        h1,h2 {
+            display: inline-block;
+            background-color: purple;
+            color: yellow;
+            margin: 0;
+            padding: 18px;
+            border-radius: 20px;
+        }
+
+        nav {
+            background-color: green;
+            overflow: hidden;
+            float: right;
+            border-radius: 10px;
+            width: 50%;
+        }
+
+        nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 18px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: green;
+        }
+
+        .dropdown {
+            float: right;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            color: white;
+            padding: 18px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 80px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #6af7f3;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content-container{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding: 20px;
+		  margin-top: -1%;
+        }
+        .content-container img{
+          max-width: 45%;
+          border-radius: 10px;
+
+        }
+
+        .content-container>img{
+          height: 25%;
+          width: 25%;
+        }
+        .content-container p{
+          font-family: 'Lobster', sans-serif;
+          font-family: 'Oswald', sans-serif;
+          font-family: 'Roboto Slab', serif;
+          max-width: 50%;
+          line-height: 3em; /* Adjust the unit as needed */
+        }
+
+        .detail{
+          margin-left: 20px;
+          margin-top: 10px;
+          display: inline-flex;
+          flex-direction: column;
+          max-width: 300px;
+        }
+
+        .detail label {
+            margin-bottom: 5px;
+            width: 300px;
+            font-weight: 600;
+            
+        }
+
+        .detail input {
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-weight: 900;
+        }
+
+        .second>img{
+          height: 25%;
+          width: 25%;
+          float: right;
+		  margin-top: -10%;
+        }
+
+        .second {
+          position: relative;
+        }
+
+        .overlay-text {
+          position: absolute;
+          top: -10%;
+          left: 40%;
+          color: purple;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 1.5;
+        }
+		
+		.source{
+		margin: 25px;
+		}
+
+		
+		.source > button{
+		background-color: #39ff03;
+		padding: 10px;
+		color: blue;
+		border-radius: 10px;
+		width: 20%;
+		border-color: #39ff03;
+		
+		}
+		
+		.source button:hover{
+		background-color: #f78d02;
+		color: purple;
+		}
+		
+		#foot{
+		background-color: #c707ed;
+		padding: 15px;
+		text-align: center;
+		margin-right: -10px;
+		margin-left: -10px;
+        font-weight: 600;		
+		}
+		#foot > a{
+		padding: 10px;
+		}
+		
+    </style>
+</head>
+<body>
+    <h1>FOOD COURT</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Contact</button>
+            <div class="dropdown-content">
+                <a href="#home">Email</a>
+                <a href="#news">Phone</a>
+                <a href="#services">Address</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-container">
+      <img src="C:\Users\vijay\Downloads\foods.png" alt="food">
+      
+      <p>Delicious meals are tasty, appetizing, scrumptious, yummy, luscious, delectable, mouth-watering, fit for a king, delightful, lovely, wonderful, pleasant, enjoyable, appealing, enchanting, charming, and highly pleasant to the taste.Stale food is no longer fresh or good to eat. Their daily diet consisted of a lump of stale bread, a bowl of rice and stale water. Stale air or a stale smell is unpleasant because it is no longer fresh.
+      </p>
+    </div>
+    <hr style="width: 100%; margin-top: -1%;">
+    <h2>Contact Form</h2>
+    <div class="second">
+
+      <form action="" class="detail">
+        <label for="name">Name</label>
+        <input type="text" name="name">
+        <label for="two">Email</label>
+        <input type="email" name="email">
+        <label for="three">Phone</label>
+        <input type="number" name="phone">
+        <input type="submit" value="submit">
+      </form>
+
+      <img class="bot" src="C:\Users\vijay\Downloads\foods.png" alt="">
+      <div class="overlay-text">Many types of meat are used for Indian cooking, but chicken and mutton tend to be the most commonly consumed meats. Fish and beef consumption are prevalent in some parts of India, but they are not widely consumed except for coastal areas, as well as the north east. Lentils are a staple ingredient in Indian cuisine.Indian cuisine encompasses a wide variety of regional cuisine native to India. Given the range of diversity in soil type, climate and occupations, these cuisines vary significantly from each other and use locally available ingredients such as: herbs, vegetables and fruits.
+	  <div class="source">
+	  <button>Java</button>
+	  <button>Mysql</button>
+	  <button>Python</button>
+	  <button>HTML</button>
+	  </div><!--source end-->
+	  </div><!--overlay-text end-->
+    </div><!--second end-->
+	<footer id="foot">
+	<a href="https://www.sreeannapoorna.com/">Annaporana</a>
+	<a href="https://haribhavanam.com/">Haribavan</a>
+	<a href="https://www.shreeanandhaas.com/">Anandas</a>
+	
+	</footer>
+	
+</body>
+</html>
